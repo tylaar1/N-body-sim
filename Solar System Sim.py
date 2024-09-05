@@ -88,12 +88,12 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
 for i in range(len(masses)):
-    ax.plot(solution[:, i*6], solution[:, (i*6)+1], solution[:, (i*6)+2], label=bodies[i])
+    ax.plot(solution[:, i*6]/6.68459e-12, solution[:, (i*6)+1]6.68459e-12, solution[:, (i*6)+2]6.68459e-12, label=bodies[i])
 #ax.legend(loc='center left', bbox_to_anchor=(1, 0.3))
 
-ax.set_xlabel('X distance (Tm)')
-ax.set_ylabel('Y distance (Tm)')
-ax.set_zlabel('Z distance (Tm)')
+ax.set_xlabel('X distance (Au)')
+ax.set_ylabel('Y distance (Au)')
+ax.set_zlabel('Z distance (Au)')
 
 ax.set_xlim(-6e12,6e12)
 ax.set_ylim(-6e12,6e12)
