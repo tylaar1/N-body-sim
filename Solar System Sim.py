@@ -6,7 +6,7 @@ Created on Tue Nov 28 16:42:22 2023
 @author: ppytr13
 """
 
-
+#takes a couple of minuites to run
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
@@ -95,6 +95,3 @@ ax.set_xlabel('X distance (Au)')
 ax.set_ylabel('Y distance (Au)')
 ax.set_zlabel('Z distance (Au)')
 
-ax.set_xlim(-6e12,6e12)
-ax.set_ylim(-6e12,6e12)
-ax.set_zlim(-6e12,6e12)
